@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Database, Package, ShoppingCart, Warehouse, DollarSign, BarChart3 } from 'lucide-react'
+import { Database, Package, ShoppingCart, Warehouse, DollarSign, BarChart3, Key } from 'lucide-react'
 
 export default function HomePage() {
   const features = [
@@ -39,6 +39,12 @@ export default function HomePage() {
       description: 'Business intelligence and reporting',
       icon: BarChart3,
       href: '/analytics',
+    },
+    {
+      title: 'Secrets',
+      description: 'Manage API keys and credentials',
+      icon: Key,
+      href: '/secrets',
     },
   ]
 

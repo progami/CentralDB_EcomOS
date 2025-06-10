@@ -101,13 +101,13 @@ model OrderItem {
 model Marketplace {
   id                  String               @id @default(cuid())
   name                String               @unique
-  apiCredentials      Json?
   commissionRate      Decimal              @db.Decimal(5, 2)
   active              Boolean              @default(true)
   createdAt           DateTime             @default(now())
   updatedAt           DateTime             @updatedAt
   orders              Order[]
   marketplaceListings MarketplaceListing[]
+  secrets             Secret[]
 }
 
 model MarketplaceListing {
@@ -218,4 +218,55 @@ enum AccountType {
   REVENUE
   EXPENSE
   EQUITY
+}
+
+model Secret {
+  id              String          @id @default(cuid())
+  service         String          // e.g., 'amazon-sp-api', 'xero', 'stripe'
+  environment     Environment     @default(PRODUCTION)
+  keyName         String          // e.g., 'client_id', 'client_secret', 'refresh_token'
+  encryptedValue  String          // Encrypted API key/secret
+  description     String?
+  expiresAt       DateTime?
+  lastUsedAt      DateTime?
+  lastRotatedAt   DateTime?
+  marketplaceId   String?
+  marketplace     Marketplace?    @relation(fields: [marketplaceId], references: [id])
+  active          Boolean         @default(true)
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  
+  @@unique([service, environment, keyName])
+  @@index([service, active])
+}
+
+enum Environment {
+  DEVELOPMENT
+  STAGING
+  PRODUCTION
+}
+
+enum SecretService {
+  // Marketplaces
+  AMAZON_SP_API
+  WALMART_API
+  EBAY_API
+  
+  // Accounting
+  XERO_API
+  QUICKBOOKS_API
+  
+  // Shipping
+  FEDEX_API
+  UPS_API
+  USPS_API
+  
+  // Payment
+  STRIPE_API
+  PAYPAL_API
+  
+  // Other
+  SMTP_EMAIL
+  GOOGLE_ANALYTICS
+  CUSTOM
 }
