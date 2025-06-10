@@ -41,3 +41,72 @@
  GET / 200 in 83ms
  ✓ Compiled /products in 164ms (510 modules)
  ✓ Compiled /inventory in 48ms (512 modules)
+ ⨯ ./app/products/page.tsx
+Error: 
+  [31mx[0m The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+    ,-[[36;1;4m/Users/jarraramjad/Documents/ecom_os/CentralDB/app/products/page.tsx[0m:11:1]
+ [2m11[0m |   TableRow,
+ [2m12[0m | } from '@/components/ui/table'
+ [2m13[0m | 
+ [2m14[0m | 'use client'
+    : [31;1m^^^^^^^^^^^^[0m
+ [2m15[0m | 
+ [2m16[0m | export default function ProductsPage() {
+ [2m17[0m |   // This would come from your database
+    `----
+
+Import trace for requested module:
+./app/products/page.tsx
+ ⨯ ./app/products/page.tsx
+Error: 
+  [31mx[0m The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+    ,-[[36;1;4m/Users/jarraramjad/Documents/ecom_os/CentralDB/app/products/page.tsx[0m:11:1]
+ [2m11[0m |   TableRow,
+ [2m12[0m | } from '@/components/ui/table'
+ [2m13[0m | 
+ [2m14[0m | 'use client'
+    : [31;1m^^^^^^^^^^^^[0m
+ [2m15[0m | 
+ [2m16[0m | export default function ProductsPage() {
+ [2m17[0m |   // This would come from your database
+    `----
+
+Import trace for requested module:
+./app/products/page.tsx
+ GET / 500 in 3ms
+ ○ Compiling /_error ...
+ GET / 500 in 16ms
+ ⨯ ./app/products/page.tsx
+Error: 
+  [31mx[0m The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+    ,-[[36;1;4m/Users/jarraramjad/Documents/ecom_os/CentralDB/app/products/page.tsx[0m:11:1]
+ [2m11[0m |   TableRow,
+ [2m12[0m | } from '@/components/ui/table'
+ [2m13[0m | 
+ [2m14[0m | 'use client'
+    : [31;1m^^^^^^^^^^^^[0m
+ [2m15[0m | 
+ [2m16[0m | export default function ProductsPage() {
+ [2m17[0m |   // This would come from your database
+    `----
+
+Import trace for requested module:
+./app/products/page.tsx
+ GET /_next/static/webpack/f6fce62ab26900b1.webpack.hot-update.json 500 in 320ms
+ GET / 500 in 19ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 2ms
+ ✓ Compiled /_not-found in 39ms (467 modules)
+ GET / 500 in 2ms
+ ✓ Compiled in 53ms (467 modules)
+ GET / 500 in 4ms
+ ✓ Compiled in 55ms (467 modules)
+ GET / 500 in 7ms
+ ✓ Compiled in 44ms (467 modules)
+ GET / 500 in 2ms
+ GET /_next/static/webpack/f6fce62ab26900b1.webpack.hot-update.json 500 in 4ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 157ms (780 modules)
+ GET / 500 in 147ms
+ GET / 200 in 73ms
+ GET / 200 in 11ms

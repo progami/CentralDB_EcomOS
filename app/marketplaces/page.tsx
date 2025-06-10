@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { ArrowLeft, Plus } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -29,7 +31,7 @@ export default function MarketplacesPage() {
             <p className="text-muted-foreground">Manage your sales channels</p>
           </div>
         </div>
-        <Button>
+        <Button onClick={() => alert('Add Marketplace functionality coming soon!')}>
           <Plus className="mr-2 h-4 w-4" />
           Add Marketplace
         </Button>
