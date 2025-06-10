@@ -1,0 +1,43 @@
+
+> centraldb@1.0.0 dev
+> next dev -p 3004
+
+  ▲ Next.js 14.2.29
+  - Local:        http://localhost:3004
+
+ ✓ Starting...
+ ✓ Ready in 1124ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1338ms (523 modules)
+ GET / 200 in 1421ms
+ ✓ Compiled in 77ms (256 modules)
+ GET / 200 in 37ms
+ ✓ Compiled /_not-found in 119ms (503 modules)
+ GET /marketplaces 404 in 29ms
+ GET / 200 in 21ms
+ GET /finance 404 in 9ms
+ GET / 200 in 21ms
+ GET /products 404 in 18ms
+ GET / 200 in 26ms
+ GET /inventory 404 in 18ms
+ GET / 200 in 11ms
+ ✓ Compiled in 71ms (256 modules)
+ ✓ Compiled in 36ms (256 modules)
+ ✓ Compiled in 45ms (256 modules)
+ ✓ Compiled in 137ms (514 modules)
+ ✓ Compiled in 42ms (256 modules)
+ ✓ Compiled in 43ms (514 modules)
+ ✓ Compiled in 38ms (256 modules)
+ ✓ Compiled in 37ms (500 modules)
+ ✓ Compiled in 47ms (256 modules)
+ ✓ Compiled in 58ms (514 modules)
+ ✓ Compiled in 34ms (256 modules)
+ ✓ Compiled in 76ms (500 modules)
+ ✓ Compiled in 44ms (256 modules)
+ ✓ Compiled in 42ms (500 modules)
+ ✓ Compiled in 35ms (256 modules)
+ ✓ Compiled in 40ms (256 modules)
+ ✓ Compiled in 55ms (500 modules)
+ GET / 200 in 83ms
+ ✓ Compiled /products in 164ms (510 modules)
+ ✓ Compiled /inventory in 48ms (512 modules)
